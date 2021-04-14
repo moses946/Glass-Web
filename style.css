@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+  
+h3 {
+color: #426696;
+font-weight: 600;
+opacity: 0.8;
+}
+main{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right top, #6cdeff, #66dbeb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.glass{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.863),rgba(255, 255, 255, 0.24));
+    width: 70vw;
+    min-height: 85vh;
+    border-radius: 2rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1, .circle2{
+    height: 13rem;
+    width: 13rem;
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0.425),rgba(255, 255, 255, 0.651));
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1{
+    top:50vh;
+    left: 18vh;
+}
+.circle2{
+    top:12vh;
+    right: 19vh;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.863),rgba(255, 255, 255, 0.24));
+    border-radius: 2rem;
+}
+.profile{
+    margin-top: 0.8rem;
+}
+
+.link{
+    display: flex;
+    padding: 0.4rem 0rem;
+    cursor: pointer;
+}
+
+.link h2{
+    background: linear-gradient(to right top, #6cdeff, #66dbeb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 1.5rem;
+}
+
+.link h2:hover{
+    border-bottom: solid 1px #66dbeb;
+}
+
+.pro{
+    background: linear-gradient(to right top, #6cdeff, #66dbeb);
+    position: relative;
+    border-radius: 2rem;
+    color: white;
+    padding: 0.6rem;
+    margin-top:0.8rem;
+    cursor: pointer;
+}
+
+.pro img{
+    position: absolute;
+    top: -25%;
+    right: 8%;
+}
+.pro h2 {
+    width: 60%;
+    color: white;
+    font-weight: 600;
+  }
+
+.content{
+    flex: 2;
+}
+.content h2{
+    margin: 1rem 1.7rem;
+}
+.cards{
+    margin-left: 3rem;
+}
+
+.card{
+    display: flex;
+    color: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.685),rgba(255, 255, 255, 0.582));
+    border-radius: 2rem;
+    width: 40vw;
+    margin: 2rem 0rem;
+    position: relative;
+
+}
+.card h3{
+    padding-left: 2.3rem;
+    padding-top: 0.8rem;
+}
+.card p{
+    right: 2rem;
+    padding-top: 0.8rem;
+    position: absolute;
+}
+.version{
+    position: absolute;
+    top:25%;
+    left: 30%;
+}
+.bar1,.bar2,.bar3{
+    background: linear-gradient(to right top, #6cdeff, #66dbeb);
+    width: 15rem;
+    height:1.3rem;
+    position: absolute;
+    right: 30%;
+    top: 65%;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+.bar1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236, 0.788);
+    position: absolute;
+    left: 70%;
+}
+.bar2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236, 0.788);
+    position: absolute;
+    left: 90%;
+}
+.bar3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236, 0.788);
+    position: absolute;
+    left: 20%;
+}
